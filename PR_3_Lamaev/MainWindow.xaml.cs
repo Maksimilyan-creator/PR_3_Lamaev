@@ -69,5 +69,214 @@ namespace PR_3_Lamaev
         {
 
         }
+
+        private void Save_player_Click(object sender, RoutedEventArgs e)
+        {
+            if (text_1.Text == null ||  text_1.Text == "")
+            {
+                MessageBox.Show("");
+            }
+            else
+            {
+                players.Add(new Player(text_1.Text, 0));
+                Update();
+            }
+        }
+
+        private void bt_check_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (Text_answers.Text == b)
+                {
+                    if (list_1.SelectedItem == null)
+                    { }
+                    int h = 0;
+                    int j = g;
+                    var k = players.FindIndex(u => u == list_1.SelectedItem);
+                    players[k].Point = players[k].Point + j;
+                    Update();
+                }
+                Text_questions.Text = "";
+                Text_answers.Text = "";
+                Update();
+            }
+            catch (System.Exception)
+            {
+                Text_questions.Text = "";
+                Text_answers.Text = "";
+                MessageBox.Show("Вы не выбрали игрока");
+            }
+        }
+
+        private void bt1_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[0].question;
+            b = questions[0].answer;
+            g = questions[0].Point;
+        }
+
+        private void bt2_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[1].question;
+            b = questions[1].answer;
+            g = questions[1].Point;
+        }
+
+        private void bt3_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[2].question;
+            b = questions[2].answer;
+            g = questions[2].Point;
+        }
+
+        private void bt4_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[3].question;
+            b = questions[3].answer;
+            g = questions[3].Point;
+        }
+
+        private void bt5_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[4].question;
+            b = questions[4].answer;
+            g = questions[4].Point;
+        }
+
+        private void bt6_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[5].question;
+            b = questions[5].answer;
+            g = questions[5].Point;
+        }
+
+        private void bt7_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[6].question;
+            b = questions[6].answer;
+            g = questions[6].Point;
+        }
+
+        private void bt8_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[7].question;
+            b = questions[7].answer;
+            g = questions[7].Point;
+        }
+
+        private void bt9_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[8].question;
+            b = questions[8].answer;
+            g = questions[8].Point;
+        }
+
+        private void bt10_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[9].question;
+            b = questions[9].answer;
+            g = questions[9].Point;
+        }
+
+        private void bt11_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[10].question;
+            b = questions[10].answer;
+            g = questions[10].Point;
+        }
+
+        private void bt12_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[11].question;
+            b = questions[11].answer;
+            g = questions[11].Point;
+        }
+
+        private void bt13_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[12].question;
+            b = questions[12].answer;
+            g = questions[12].Point;
+        }
+
+        private void bt14_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[13].question;
+            b = questions[13].answer;
+            g = questions[13].Point;
+        }
+
+        private void bt15_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[14].question;
+            b = questions[14].answer;
+            g = questions[14].Point;
+        }
+
+        private void bt16_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[15].question;
+            b = questions[15].answer;
+            g = questions[15].Point;
+        }
+
+        private void bt17_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[16].question;
+            b = questions[16].answer;
+            g = questions[16].Point;
+        }
+
+        private void bt18_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[17].question;
+            b = questions[17].answer;
+            g = questions[17].Point;
+        }
+
+        private void bt19_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[18].question;
+            b = questions[18].answer;
+            g = questions[18].Point;
+        }
+
+        private void bt20_Click(object sender, RoutedEventArgs e)
+        {
+            bt1.Visibility = Visibility.Collapsed;
+            Text_questions.Text = questions[19].question;
+            b = questions[19].answer;
+            g = questions[19].Point;
+        }
+
+        private void The_best_Click(object sender, RoutedEventArgs e)
+        {
+            Player player1 = players[0];
+            foreach(var l in players)
+            {
+                if (player1.Point < l.Point) player1 = l;
+            }
+            MessageBox.Show(player1.Name, " Победитель");
+        }
     }
 }
