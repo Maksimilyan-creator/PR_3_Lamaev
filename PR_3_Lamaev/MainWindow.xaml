@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR_3_Lamaev"
         mc:Ignorable="d"
-        Title="Викторина_Ламаев" Height="450" Width="650
+        Title="Викторина_Ламаев" Height="540" Width="650
         ">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="155*"/>
-            <ColumnDefinition Width="560*"/>
-            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="149*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Background="CadetBlue" Grid.ColumnSpan="3" Width="NaN" Height="NaN" Margin="0,0,142,303" >
+        <WrapPanel Background="CadetBlue" Grid.ColumnSpan="2" Width="NaN" Height="NaN" Margin="0,0,4,303" >
             <TextBlock Text="Города Росии" FontSize="15" Height="24" Width="100" Margin="9" ></TextBlock>
             <Button x:Name="bt1" Content="100" Height="55" Width="65"  ></Button>
             <Button x:Name="bt2" Content="200" Height="55" Width="65"  ></Button>
@@ -22,7 +22,7 @@
             <Button x:Name="bt5" Content="500" Height="55" Width="65"  ></Button>
         </WrapPanel>
         <Border></Border>
-        <WrapPanel Background="CadetBlue" Margin="0,67,142,303" Grid.ColumnSpan="3">
+        <WrapPanel Background="CadetBlue" Margin="0,67,4,194" Grid.ColumnSpan="2">
             <TextBlock Text="Детские сказки" FontSize="15" Margin="7" RenderTransformOrigin="0.5,0.5" >
                 <TextBlock.RenderTransform>
                     <TransformGroup>
@@ -37,10 +37,53 @@
             <Button x:Name="bt8" Content="300" Height="55" Width="65"  ></Button>
             <Button x:Name="bt9" Content="400" Height="55" Width="65"  ></Button>
             <Button x:Name="bt10" Content="500" Height="55" Width="65"  ></Button>
+        </WrapPanel>
+        <WrapPanel Background="CadetBlue" Margin="0,131,4,86" Grid.ColumnSpan="2" >
+            <TextBlock Text="Промыш-ть" FontSize="15" Height="22" Margin="19" ></TextBlock>
+            <Button x:Name="bt11" Content="100" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt12" Content="200" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt13" Content="300" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt14" Content="400" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt15" Content="500" Height="55" Width="65"  ></Button>
+        </WrapPanel>
+        <WrapPanel Background="CadetBlue" Margin="0,196,4,86" Grid.ColumnSpan="2" >
+            <TextBlock Text="ЗОЖ           " FontSize="15" Margin="21" ></TextBlock>
+            <Button x:Name="bt16" Content="100" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt17" Content="200" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt18" Content="300" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt19" Content="400" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt20" Content="500" Height="55" Width="65"  ></Button>
 
         </WrapPanel>
 
+        <StackPanel Background="CadetBlue" Grid.ColumnSpan="2" Margin="0,272,4,0" >
+            <TextBlock Text="Игроки" FontSize="15" Margin="22,0,0,0" ></TextBlock>
+            <WrapPanel >
+                <ListBox x:Name="list_1" Height="123" Width="165" Margin="20,8,0,0" HorizontalContentAlignment="Left" SelectionMode="Single" SelectionChanged="list_1_SelectionChanged"  >
+                    <ListBox.ItemTemplate >
+                        <DataTemplate >
+                            <StackPanel >
+                                <TextBlock Height="15" Width="800" Text="{Binding Name}"/>
+                                <TextBlock Height="15" Width="800" Text="{Binding Point}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </WrapPanel>
+            <TextBlock Text="Создаваемый игрок" FontSize="15" Margin="0,10,310,0" Width="145" />
+            <TextBox x:Name="text_1" Width="164" Height="25" Margin="0,5,295,0"  HorizontalContentAlignment="Left"/>
+            <Button Content="Добавить игрока" Width="108" Height="25" x:Name="Save_player" Margin="-10,-25,0,0"  ></Button>
+            <Button x:Name="The_best" Content="Лучший игрок" Height="63" Width="96" Margin="0,-250,0,0" />
+        </StackPanel>
+        <StackPanel Background="CadetBlue" Grid.Column="1" Margin="341,0,0,0" Grid.ColumnSpan="2" >
+            <TextBlock Text="Вопрос" FontSize="15" Margin="0,10,125,-5" Width="57"/>
+            <TextBox x:Name="Text_questions" Height="184" Width="185" Margin="0,15,0,0" TextWrapping="Wrap" />
+            <TextBlock Text="Ваш ответ" FontSize="15" Margin="0,10,100,0" Width="74"/>
+            <TextBox x:Name="Text_answers" Height="120" Width="185" TextWrapping="Wrap" Margin="0,10,0,0"  />
+            <Button x:Name="bt_check" Height="39" Width="112" Content="Проверить ответ" Margin="0,10,0,0" />
 
 
+
+        </StackPanel>
     </Grid>
 </Window>
