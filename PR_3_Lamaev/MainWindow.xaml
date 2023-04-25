@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR_3_Lamaev"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Викторина_Ламаев" Height="450" Width="650
+        ">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="155*"/>
+            <ColumnDefinition Width="560*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Background="CadetBlue" Grid.ColumnSpan="3" Width="NaN" Height="NaN" Margin="0,0,142,303" >
+            <TextBlock Text="Города Росии" FontSize="15" Height="24" Width="100" Margin="9" ></TextBlock>
+            <Button x:Name="bt1" Content="100" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt2" Content="200" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt3" Content="300" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt4" Content="400" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt5" Content="500" Height="55" Width="65"  ></Button>
+        </WrapPanel>
+        <Border></Border>
+        <WrapPanel Background="CadetBlue" Margin="0,67,142,303" Grid.ColumnSpan="3">
+            <TextBlock Text="Детские сказки" FontSize="15" Margin="7" RenderTransformOrigin="0.5,0.5" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.505"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.46"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform></TextBlock>
+            <Button x:Name="bt6" Content="100" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt7" Content="200" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt8" Content="300" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt9" Content="400" Height="55" Width="65"  ></Button>
+            <Button x:Name="bt10" Content="500" Height="55" Width="65"  ></Button>
+
+        </WrapPanel>
+
+
+
     </Grid>
 </Window>
